@@ -1,0 +1,11 @@
+//Print 1 -> N (Cannot Use i + 1)
+
+function count(i, n) {
+  if (i < 1) return;
+
+  count(i - 1, n);
+  console.log(i);
+}
+
+let c1 = count(3, 3);
+console.log(c1);
