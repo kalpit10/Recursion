@@ -7,5 +7,14 @@ function count(i, n) {
   console.log(i);
 }
 
-let c1 = count(3, 3);
-console.log(c1);
+count(3, 3);
+
+// Print N -> 1 (Cannot use i - 1)
+
+function count2(i, n) {
+  if (i > n) return;
+
+  count2(i + 1, n);
+  console.log(i);
+}
+count2(1, 3);
